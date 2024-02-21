@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Example</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="200" height="200"></canvas>
+
+  <button onclick="change()">enter</button>
+
+  <script>
+    // Get the canvas element and its context
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Set the circle properties
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 50;
+    var startAngle = 0;
+    
+    var endAngle = 2 * Math.PI;
+
+    // Draw the circle
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.fillStyle = "blue"; // Fill color
+    ctx.fill(); // Fill the circle
+    ctx.lineWidth = 2; // Border width
+    ctx.strokeStyle = "black"; // Border color
+    ctx.stroke(); // Draw the border
+    ctx.closePath(); // Close the path
+  </script>
+</body>
+</html>

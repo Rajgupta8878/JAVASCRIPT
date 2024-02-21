@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Carousel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="nav-item ">
+                <ul class="nav justify-content-center  ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Contact</a>
+                    </li>
+                </ul>>
+    
+   
+            <a href="#" class="btn btn-primary btn-large">Home<span class="glyphicon glyphicon-home"></span></a>
+          
+    <a href="#" class="btn btn-success btn-large">Contact<span class="glyphicon glyphicon-phone"></span></a>
+       
+    <center>
+        <h1 style="color:maroon">Khana-khajana</h1>
+        <div class="container mt-4">
+            <form class="form-inline">
+                Recipe: <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </center>
+
+    <div class="row" id="cl">
+        <h4 style="text-shadow: 1cm;" style="color: aqua;">Menu</h4>
+
+        <div class="col-md-4" style="background-color:lavender;">
+            <img src="https://img.freepik.com/free-photo/delicious-indian-dosa-composition_23-2149086051.jpg?w=740&t=st=1697897020~exp=1697897620~hmac=f6a63ea91b7ff69012bebc8b041dacf1fa0d4cdc11b0f9676d1d15d1baef33c9"
+                class="img-responsive" alt="Breakfast">
+            <h4>Breakfast Recipes | 120 Vegetarian Breakfast (Indian and Global)</h4>
+            <p>We’ve all heard that breakfast is the most important meal of the day, so I’ve gone ahead and done the
+                hard work for you! Here’s a list of over 135 delightful breakfast recipes spanning both Indian and
+                Global Cuisine.</p>
+            <a href="#" target="_blank"><button style="color: green;">open</button></a>
+            <a href="#" target="_blank">Learn More</a>
+        </div>
+
+        <div class="col-md-4" style="background-color:lavender;">
+            <img src="https://img.freepik.com/free-photo/side-view-chicken-nuggets-lettuce-with-sauce-unpeeled-potatoes_141793-4841.jpg?w=740&t=st=1697897338~exp=1697897938~hmac=20b3e72d4f5266706182eb432ae343bac79ef46e525fdc30c2bb3d67d6b0fc11"
+                class="img-responsive" alt="Snacks">
+            <h4>Snacks Recipes</h4>
+            <p>Find snacks recipes from the Indian cuisine as well as World cuisine. The recipes are both vegetarian
+                and vegan. Some starter snacks are also included in this category.
+
+                You will find a snack for every occasion – from simple to exotic. The snacks can be served with
+                evening tea. You can also have these as a mid-morning or mid-evening snack.</p>
+            <a href="#" target="_blank"><button style="color: green;">open</button></a>
+            <a href="#" target="_blank">Learn More</a>
+
+        </div>
+        <div class="col-md-4" style="background-color:lavender;">
+            <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-apples-chili-top-view_2829-19996.jpg?w=740&t=st=1697897450~exp=1697898050~hmac=0e277d457c955ed14fc4517d5325f5a7116e1ab9fa09fc3ee6ca7fd0c39f52e0"
+                class="img-responsive" alt="Paneer">
+            <h4>Paneer Recipes | 70 Tasty Paneer Dishes</h4>
+            <p>A Paneer Recipes collection that will help you to decide what to make with a block of paneer. Find 70
+                Indian Paneer Recipes ranging from breakfast, snacks, sweets and main course. From these extensive list
+                of paneer recipes, choose the recipe that you want to make depending on the availability of
+                ingredients and the time you have.</p>
+            <a href="#" target="_blank"><button style="color: green;">open</button></a>
+            <a href="#" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <h1>Recipe</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="https://img.freepik.com/premium-photo/shahi-paneer_57665-15290.jpg?w=740"
+                        class="img-responsive" alt="jokes 1">
+                </div>
+                <div class="item">
+                    <img src="https://img.freepik.com/premium-psd/bowl-tasty-matar-paneer-curry-transparent-background_927015-290.jpg?w=740"
+                        class="img-responsive" alt="jokes 2">
+                </div>
+                <div class="item">
+                    <img src="https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?w=740&t=st=1697894398~exp=1697894998~hmac=2a40de60952678be4abc0c2791ac7f2fe447e7a8a25060e5bd83a6372f7c1e53"
+                        class="img-responsive" alt="jokes 3">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><!-- corousel end -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

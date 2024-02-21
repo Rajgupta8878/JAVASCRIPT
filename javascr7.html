@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<title>Title</title>
+</head>
+<body> 
+
+    <ul id="list"> 
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>orange</li>
+    </ul>
+
+
+
+    <div id="element">
+        <div id="element-content">element</div>
+        </div>
+<button onclick="remove()">remove</button>
+<script>
+
+    // var sel = document.getElementById("list");
+    // var res= sel.childNodes[1];
+    // console.log(res);
+    function remove(){
+           var sel = document.getElementById("list");
+           var lastchild = sel.lastChild;
+           sel.removeChild(lastchild);
+    }
+ 
+</script>
+
+</body>
+</html>

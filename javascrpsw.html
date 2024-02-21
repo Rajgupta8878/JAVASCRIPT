@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+         function val(){
+            var msg;
+            if(document.myform,userpass.value.length>5){
+                msg="good";
+            }
+
+            else{
+                msg="poor";
+            }
+
+            document.getElementById("mylocation").innerText=msg;
+
+         }
+
+         document.writeln("<br/navigator.appcode :" +navigator.appCodename>);
+        </Script>
+
+        <form name="myform">
+          enter password:   <input type ="password" value="" name="userpass" onkeyup="val()">
+          strenght:<span id = "mylocation"> no strenght</span>
+
+             
+       
+        </form>
+
+
+        document.writeln("<br/navigator.appcode :" +navigator.appCodename>);
+</body>
+</html>
